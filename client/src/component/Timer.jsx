@@ -29,7 +29,7 @@ function Timer() {
     <div className="container">
       <h1>{minute}:{second}</h1>
       {
-        minute <= 5 ? <Result></Result> : <Question></Question>
+        minute === 5 ? <Result></Result> : <Question></Question>
       }
     </div>
   )
