@@ -21,7 +21,7 @@ function Home() {
 
       if(userData && userData.userName){
         dispatch(setUserId(userName))
-        navigate("/quiz")
+        navigate("/timer")
       }
 
     }
