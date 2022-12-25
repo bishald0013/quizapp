@@ -11,7 +11,7 @@ function Timer() {
     const [minute, setMinute] = useState(0)
 
     useEffect(() => {
-      let timer = setIntervalt(() => {
+      let timer = setInterval(() => {
         
         setSecond(second+1);
           
@@ -23,7 +23,7 @@ function Timer() {
       }, 1000)
     
       return ()=> clearInterval(timer); 
-    })
+    },[])
 
   return (
     <div className="container">

@@ -7,12 +7,11 @@ import { useEffect } from 'react'
 import {attempt_number, marks} from "../ResultCount/countResult"
 import { userResult } from '../hooks/setResult'
 
-
 function Result() {
 
   const dispatch = useDispatch()
 
-  const { questions : { queue, answer}, result: {result, useId}} = useSelector(state => state)
+  const { questions : { queue, answer}, result: {result, userId}} = useSelector(state => state)
 
   useEffect(() => {
     console.log(totalMarks)

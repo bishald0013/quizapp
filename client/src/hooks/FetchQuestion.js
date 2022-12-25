@@ -45,7 +45,6 @@ export const useFetchQuestion = () => {
 export const NextAction = () => async (dispatch) => {
     try {
         dispatch(Action.nextAction())
-
     } catch (error) {
         console.log(error)
     }
